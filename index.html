@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Romir исследовательский холдинг</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-3">
+                <div class="header-logo">
+                    <div class="header-logo__img">
+                        <img src="img/logo.svg" align="ramir-logo" width="79" height="30">
+                    </div>
+                    <p class="header-logo__text">
+                        исследовательский<br>
+                        холдинг
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-9">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <img src="img/icons/favorite.svg" alt="Отложенные"><span
+                                class="label label-success header__nav-label">2</span>
+                            Отложенные
+                        </li>
+                        <li class="header__nav-item">
+                            <img src="img/icons/cart-orange.svg" alt="Корзина">
+                            Корзина
+                        </li>
+                        <li class="header__nav-item">
+                            <img src="img/icons/points.svg" alt="баллы">
+                            <span class="color-orange">6 780</span> баллов
+                        </li>
+                        <li class="header__nav-item header__nav-item--massages">
+                            <img src="img/icons/comments.svg" alt="Сообщения">
+                            Сообщения
+                        </li>
+                    </ul>
+                    <div class="header__nav-user">
+                        <p>
+                            Иван Петров<br>
+                            <b>№12345</b>
+                        </p>
+                        <img src="img/icons/more-vertical.svg" alt="Сообщения">
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="main-nav">
+        <div class="container">
+            <div class="col-xs-12 col-sm-10">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href="">Главная</a></li>
+                    <li class="main-nav__item main-nav__item--active"><a href="">Каталог подарков</a></li>
+                    <li class="main-nav__item"><a href="">Анкеты</a></li>
+                    <li class="main-nav__item"><a href="">Новости</a></li>
+                    <li class="main-nav__item"><a href="">Доставка</a></li>
+                    <li class="main-nav__item"><a href="">Справка</a></li>
+                    <li class="main-nav__item"><a href="">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-2 col-sm-2">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href=""><img src="img/icons/bill.svg" alt="Дневник">Дневник</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <main class="page-wrapper">
+        <section class="breadcrumb-wrapper">
+            <div class="container">
+                <div class="col-xs-12">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="#">Каталог подарков</a></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="page-header">
+            <div class="container">
+                <div class="col-xs-12">
+                    <h1>Каталог подарков</h1>
+                </div>
+            </div>
+        </section>
+        <section class="filter">
+            <div class="container">
+                <div class="col-xs-12">
+                    <div class="input-group main-search">
+                        <input type="text" class="form-control" placeholder="Поиск товара…"
+                               aria-describedby="basic-addon2">
+                        <span class="input-group-btn">
+                            <button class="btn btn btn-primary" type="button">Найти</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-xs-12 col-sm-10">
+                    <div class="filter__inner">
+                        <div class="filter__points-wrapper">
+                        <span class="filter__title">Сортировать:</span>
+                        <div class="filter__group">
+                            <div class="dropdown dropdown--small">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="filterMenu"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Выберите фильтр…
+                                    <span class="caret"><span class="glyphicon glyphicon-menu-down"
+                                                              aria-hidden="true"></span></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="filterMenu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="filter__points-wrapper">
+                        <div class="input-group input-group--small">
+                            <input type="text" class="form-control" placeholder="от 100"
+                                   aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group input-group--small">
+                            <input type="text" class="form-control" placeholder="до 99 999"
+                                   aria-describedby="basic-addon1">
+                        </div>
+                        <span class="filter__title">баллов</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <a class="filter__points-info" href="">Как получить баллы?</a>
+                </div>
+            </div>
+        </section>
+        <section class="catalog-wrapper container">
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="catalog-card">
+                    <div class="catalog-card__img">
+                        <img src="" align="Бытовая техника">
+                    </div>
+                    <h4 class="catalog-card__title">Бытовая техника</h4>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="catalog-card">
+                    <div class="catalog-card__img">
+                        <img src="" alt="Детям и мамам">
+                    </div>
+                    <h4 class="catalog-card__title">Детям и мамам</h4>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="catalog-card">
+                    <div class="catalog-card__img">
+                        <img src="" alt="Дом и сад">
+                    </div>
+                    <h4 class="catalog-card__title">Дом и сад</h4>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="catalog-card">
+                    <div class="catalog-card__img">
+                        <img src="" alt="Игры и софт">
+                    </div>
+                    <h4 class="catalog-card__title">Игры и софт</h4>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="catalog-card">
+                    <div class="catalog-card__img">
+                        <img src="" alt="Книги">
+                    </div>
+                    <h4 class="catalog-card__title">Книги</h4>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="catalog-card">
+                    <div class="catalog-card__img">
+                        <img src="" alt="Красота и здоровье">
+                    </div>
+                    <h4 class="catalog-card__title">Красота и здоровье</h4>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="catalog-card">
+                    <div class="catalog-card__img">
+                        <img src="" alt="Спорт и отдых<">
+                    </div>
+                    <h4 class="catalog-card__title">Спорт и отдых</h4>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="catalog-card">
+                    <div class="catalog-card__img">
+                        <img src="" alt="Творчество и хобби">
+                    </div>
+                    <h4 class="catalog-card__title">Творчество и хобби</h4>
+                </div>
+            </div>
+        </section>
+        <section class="page-sub-title-wrapper">
+            <div class="container">
+                <div class="col-xs-12">
+                    <h3 class="page-sub-title">Популярные товары</h3>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="product-card">
+                    <div class="product-card__img">
+                        <img src="" alt="Ирригатор">
+                    </div>
+                    <span class="product-card__category">Ирригатор</span>
+                    <a href="" class="product-card__name">WaterPik WP-100 Ultra / WP-11</a>
+                    <span class="product-card__points">2 789 баллов</span>
+                    <button class="btn btn-primary">
+                        <img src="img/icons/cart-white.svg" alt="В корзину">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="product-card">
+                    <div class="product-card__img">
+                        <img src="">
+                    </div>
+                    <span class="product-card__category">Ирригатор</span>
+                    <a href="" class="product-card__name">WaterPik WP-100 Ultra / WP-11</a>
+                    <span class="product-card__points">2 789 баллов</span>
+                    <button class="btn btn-primary">
+                        <img src="img/icons/cart-white.svg" alt="В корзину">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="product-card">
+                    <div class="product-card__img">
+                        <img src="">
+                    </div>
+                    <span class="product-card__category">Ирригатор</span>
+                    <a href="" class="product-card__name">WaterPik WP-100 Ultra / WP-11</a>
+                    <span class="product-card__points">2 789 баллов</span>
+                    <button class="btn btn-primary">
+                        <img src="img/icons/cart-white.svg" alt="В корзину">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="product-card">
+                    <div class="product-card__img">
+                        <img src="">
+                    </div>
+                    <span class="product-card__category">Ирригатор</span>
+                    <a href="" class="product-card__name">WaterPik WP-100 Ultra / WP-11</a>
+                    <span class="product-card__points">2 789 баллов</span>
+                    <button class="btn btn-primary">
+                        <img src="img/icons/cart-white.svg" alt="В корзину">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="product-card">
+                    <div class="product-card__img">
+                        <img src="">
+                    </div>
+                    <span class="product-card__category">Ирригатор</span>
+                    <a href="" class="product-card__name">WaterPik WP-100 Ultra / WP-11</a>
+                    <span class="product-card__points">2 789 баллов</span>
+                    <button class="btn btn-primary">
+                        <img src="img/icons/cart-white.svg" alt="В корзину">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="product-card">
+                    <img class="product-card__img" src="">
+                    <span class="product-card__category">Ирригатор</span>
+                    <a href="" class="product-card__name">WaterPik WP-100 Ultra / WP-11</a>
+                    <span class="product-card__points">2 789 баллов</span>
+                    <button class="btn btn-primary">
+                        <img src="img/icons/cart-white.svg" alt="В корзину">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="product-card">
+                    <img class="product-card__img" src="">
+                    <span class="product-card__category">Ирригатор</span>
+                    <a href="" class="product-card__name">WaterPik WP-100 Ultra / WP-11</a>
+                    <span class="product-card__points">2 789 баллов</span>
+                    <button class="btn btn-primary">
+                        <img src="img/icons/cart-white.svg" alt="В корзину">
+                        В корзину
+                    </button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="product-card">
+                    <img class="product-card__img" src="">
+                    <span class="product-card__category">Ирригатор</span>
+                    <a href="" class="product-card__name">WaterPik WP-100 Ultra / WP-11</a>
+                    <span class="product-card__points">2 789 баллов</span>
+                    <button class="btn btn-primary btn-disabled">
+                        <img src="img/icons/points-no.svg" alt="В корзину">
+                        Мало баллов
+                    </button>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <button class="btn btn-default catalog-show-more">Показать еще</button>
+            </div>
+        </div>
+        <section class="page-sub-title-wrapper">
+            <div class="container">
+                <div class="col-xs-12">
+                    <h3 class="page-sub-title">Вы смотрели</h3>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="product-card product-card--small">
+                    <div class="product-card__img">
+                        <img src="">
+                    </div>
+                    <div class="product-card__info">
+                        <span class="product-card__category">Ирригатор</span>
+                        <a href="" class="product-card__name">WaterPik WP-100 Ultra / WP-11</a>
+                        <span class="product-card__points">2 789 баллов</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="product-card product-card--small">
+                    <div class="product-card__img">
+                        <img src="">
+                    </div>
+                    <div class="product-card__info">
+                        <span class="product-card__category">Ирригатор</span>
+                        <a href="" class="product-card__name">WaterPik WP-100 Ultra / WP-11</a>
+                        <span class="product-card__points">2 789 баллов</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="product-card product-card--small">
+                    <div class="product-card__img">
+                        <img src="">
+                    </div>
+                    <div class="product-card__info">
+                        <span class="product-card__category">Фен</span>
+                        <a href="" class="product-card__name">WaterPik WP-100 Ultra / WP-11</a>
+                        <span class="product-card__points">1 239 баллов</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="product-card product-card--small">
+                    <div class="product-card__img">
+                        <img src="">
+                    </div>
+                    <div class="product-card__info">
+                        <span class="product-card__category">Электробритва</span>
+                        <a href="" class="product-card__name">Philips QP2520 OneBlade</a>
+                        <span class="product-card__points">1 021 балл</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="footer__logo">
+                    <img src="img/logo-white.svg" width="79" height="30">
+                </div>
+                <p class="footer__text">
+                    603000, г. Нижний Новгород,<br> ул. Звездинка, д.20Б, п.4
+                </p>
+                <p class="footer__text"><a href="">О компании</a></p>
+                <p class="footer__text"><a href="">О проекте</a></p>
+                <p class="footer__text"><a href="">Соглашение об участии в проекте</a></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <p class="footer__title">Отправка чеков</p>
+                <p class="footer__text">
+                    Адрес для отправки бумажных чеков:<br> 603000, г. Нижний Новгород,<br> ул. Звездинка, д.20Б, п.4
+                </p>
+                <p class="footer__text">
+                    Электронный адрес для отправки чеков:<br> <a href="mailto:scan@superresearch.ru">scan@superresearch.ru</a>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <p class="footer__title">Контакты</p>
+                <p class="footer__text">Телефоны: 8 (831) 216-08-04,<br> 8 (920) 050-04-23</p>
+                <p class="footer__text">Эл. почта: <a href="mailto:info@romir.ru">info@romir.ru</a></p>
+                <p class="footer__text">Мобильное приложение Romir</p>
+            </div>
+        </div>
+        <section class="footer-bottom">
+            <div class="container">
+                <div class="col-xs-12 col-sm-6">
+                    <p>© 2017 «РОМИР» Все права защищены.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 text-right">
+                    <a href="">Условия использования</a>
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
